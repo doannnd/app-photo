@@ -4,14 +4,24 @@
     <!-- hint edit text -->
     <string name="hint_email">Email</string>
     <string name="hint_password">Password</string>
+    <string name="hint_confirm_password">Confirm password</string>
 
     <!-- label button -->
     <string name="title_login">Login</string>
     <string name="title_register">Register</string>
     <string name="title_need_register">Need a new account ?</string>
+    <string name="title_need_login"> Already have a account ?</string>
 
     <!-- content description image -->
     <string name="cdi_login_logo">Login logo</string>
     <string name="cdi_register_logo">Register logo</string>
+
+    <!-- label text view -->
+    <string name="label_toolbar">PhotoBlog</string>
+
+    <!--label menu -->
+    <string name="menu_search">Search</string>
+    <string name="menu_settings">Settings</string>
+    <string name="menu_logout">Logout</string>
 
 </resources>

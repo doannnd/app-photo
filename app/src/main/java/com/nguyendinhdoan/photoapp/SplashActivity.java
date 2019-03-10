@@ -19,11 +19,13 @@ public class SplashActivity extends AppCompatActivity {
     protected void onStart() {
         super.onStart();
         FirebaseUser user = FirebaseAuth.getInstance().getCurrentUser();
+        // if user doesn't sign in
         if (user == null) {
             Intent intentLogin = LoginActivity.getStartIntent(SplashActivity.this);
             startActivity(intentLogin);
             finish();
         } else {
+            // if user exist jump to MainActivity
             Intent intentMain = MainActivity.getStartIntent(SplashActivity.this);
             startActivity(intentMain);
             finish();
