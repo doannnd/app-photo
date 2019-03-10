@@ -15,9 +15,12 @@
     <!-- content description image -->
     <string name="cdi_login_logo">Login logo</string>
     <string name="cdi_register_logo">Register logo</string>
+    <string name="cid_setting_avatar">Setting avatar</string>
 
-    <!-- label text view -->
-    <string name="label_toolbar">PhotoBlog</string>
+    <!-- label toolbar -->
+    <string name="toolbar_main">PhotoBlog</string>
+    <string name="toolbar_setting">ProfileUser
+    </string>
 
     <!--label menu -->
     <string name="menu_search">Search</string>

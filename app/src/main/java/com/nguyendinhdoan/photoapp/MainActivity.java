@@ -39,7 +39,7 @@ public class MainActivity extends AppCompatActivity {
         // check if user doesn't exist to login
         FirebaseUser user = mFirebaseAuth.getCurrentUser();
         if (user == null) {
-            jumLoginActivity();
+            jumpLoginActivity();
         }
     }
 
@@ -77,7 +77,7 @@ public class MainActivity extends AppCompatActivity {
         setSupportActionBar(mToolbar);
         if (getSupportActionBar() != null) {
             getSupportActionBar().setDisplayShowTitleEnabled(true);
-            getSupportActionBar().setTitle(getString(R.string.label_toolbar));
+            getSupportActionBar().setTitle(getString(R.string.toolbar_main));
         }
     }
 
@@ -90,17 +90,23 @@ public class MainActivity extends AppCompatActivity {
     }
 
     private void handleSettings() {
-        // TODO:
+        jumpSettingActivity();
     }
 
     private void handleLogout() {
         mFirebaseAuth.signOut();
-        jumLoginActivity();
+        jumpLoginActivity();
     }
 
-    private void jumLoginActivity() {
+    private void jumpLoginActivity() {
         Intent intentLogin = LoginActivity.getStartIntent(MainActivity.this);
         startActivity(intentLogin);
+        finish();
+    }
+
+    private void jumpSettingActivity() {
+        Intent intentSetting = SettingActivity.getStartIntent(MainActivity.this);
+        startActivity(intentSetting);
         finish();
     }
 }

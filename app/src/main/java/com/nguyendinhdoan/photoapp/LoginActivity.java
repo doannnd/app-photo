@@ -109,7 +109,7 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
                     jumpMainActivity();
                 } else {
                     Log.w(TAG, "LOGIN FAILED: ", task.getException());
-                    Toast.makeText(LoginActivity.this, "Login failed" + task.getException().getMessage(), Toast.LENGTH_SHORT).show();
+                    Toast.makeText(LoginActivity.this, "Login failed" + task.getException(), Toast.LENGTH_SHORT).show();
                 }
                 pbLoading.setVisibility(View.GONE);
             }
