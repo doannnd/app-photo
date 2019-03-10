@@ -10,4 +10,8 @@
     <string name="title_register">Register</string>
     <string name="title_need_register">Need a new account ?</string>
 
+    <!-- content description image -->
+    <string name="cdi_login_logo">Login logo</string>
+    <string name="cdi_register_logo">Register logo</string>
+
 </resources>
