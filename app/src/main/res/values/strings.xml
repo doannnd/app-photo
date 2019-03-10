@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">PhotoApp</string>
+
+    <!-- hint edit text -->
+    <string name="hint_email">Email</string>
+    <string name="hint_password">Password</string>
+
+    <!-- label button -->
+    <string name="title_login">Login</string>
+    <string name="title_register">Register</string>
+    <string name="title_need_register">Need a new account ?</string>
+
+</resources>
