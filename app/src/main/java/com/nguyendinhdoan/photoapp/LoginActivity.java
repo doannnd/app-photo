@@ -1,9 +1,15 @@
 package com.nguyendinhdoan.photoapp;
 
+import android.content.Context;
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
 public class LoginActivity extends AppCompatActivity {
+
+    public static Intent getStartIntent(Context context) {
+        return new Intent(context, LoginActivity.class);
+    }
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
